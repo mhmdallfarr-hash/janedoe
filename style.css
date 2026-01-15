@@ -1,0 +1,121 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #595941;
+            color: #111;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        header h2 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #111;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .page {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            padding: 140px 60px 60px;
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        .hero h1 {
+            font-size: 72px;
+            line-height: 1.1;
+            max-width: 700px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 16px;
+            max-width: 400px;
+        }
+
+        .about h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 500px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .works h1 {
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+
+        .project-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .project {
+            background: #fff;
+            padding: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-8px);
+        }
+
+        .project h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .project p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* CONTACT */
+        .contact h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }

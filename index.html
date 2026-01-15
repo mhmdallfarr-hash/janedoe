@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Faruq — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>Muhammad Umar Faruq</h2>
+    <nav>
+        <a onclick="showPage('home')">Home</a>
+        <a onclick="showPage('about')">About</a>
+        <a onclick="showPage('works')">Work</a>
+        <a onclick="showPage('contact')">Contact</a>
+    </nav>
+</header>
+
+<section class="page active hero" id="home">
+    <h1>
+        Digital<br>
+        Portfolio<br>
+        With Faruq
+    </h1>
+    <p>
+        Personal portfolio showcasing projects, logic, and design thinking.
+    </p>
+</section>
+
+<section class="page about" id="about">
+    <h1>About Me</h1>
+    <p>
+        Saya adalah mahasiswa Teknik Informatika dengan ketertarikan pada pengembangan web dan pemrograman. Memiliki pengalaman menggunakan HTML, CSS, dan JavaScript dalam pembuatan website sederhana hingga interaktif. Saya senang mempelajari hal baru, bertanggung jawab, dan berkomitmen untuk terus mengembangkan kemampuan di bidang teknologi informasi
+    </p>
+</section>
+
+<section class="page works" id="works">
+    <h1>Selected Works</h1>
+
+    <div class="project-list">
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>HTML, CSS, JavaScript</p>
+        </div>
+
+        <div class="project">
+            <h3>Mini Game 2D</h3>
+            <p>JavaScript Logic</p>
+        </div>
+
+        <div class="project">
+            <h3>Data Program</h3>
+            <p>Python & Java</p>
+        </div>
+
+        <div class="project">
+            <h3>UI Exploration</h3>
+            <p>Minimalist Layout</p>
+        </div>
+    </div>
+</section>
+
+<section class="page contact" id="contact">
+    <h1>Contact</h1>
+    <p>Email:
+        <a href="mailto:mhmdallfarr@email.com">
+        mhmdallfarr@email.com
+        </a>
+    </p>
+
+    <p>Instagram:
+        <a href="https://instagram.com/allfarrq" target="_blank">
+        @allfarrq
+        </a>
+    </p>
+</section>
+
+<script>
+    function showPage(pageId) {
+        document.querySelectorAll('.page').forEach(page => {
+            page.classList.remove('active');
+        });
+
+        document.getElementById(pageId).classList.add('active');
+    }
+</script>
+
+</body>
+</html>
